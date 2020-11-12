@@ -1,0 +1,26 @@
+<template>
+  <lightning-card variant="Narrow" icon-name="doctype:image" title={componentTitle}>
+      <div class="spinner-container slds-visible">
+      <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+      </div>
+      <div class="media-list slds-hide">
+        <div class="file-preview">
+          <img src="" data-id="preview" onclick={showImageEditor} />
+        </div>
+        <div>
+          <ul>
+            <li><img data-id="image" src="https://source.unsplash.com/PFGC_V7paRM/300x300" onclick={preview} class="current" /></li>
+            <li><img data-id="image" src="https://source.unsplash.com/4TGpejM92IQ/300x300" onclick={preview} /></li>
+            <li><img data-id="image" src="https://source.unsplash.com/piLyYcMpBTM/300x300" onclick={preview} /></li>
+          </ul>
+        </div>
+      </div>
+      <template if:true={showModal}>
+        <c-demjfilepreview 
+          content-id={contentId}
+          img-element={previewContainer} cancel-callback={hideImageEditor} 
+          save-callback={saveImage}
+        ></c-demjfilepreview>
+      </template>
+  </lightning-card>
+</template>

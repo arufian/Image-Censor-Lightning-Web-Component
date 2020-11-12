@@ -1,0 +1,19 @@
+<template>
+  <section 
+    role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" 
+    aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_large">
+    <div class="slds-modal__container">
+      <div class="button-close">
+        <lightning-button-icon  variant="border-inverse" icon-name="utility:close" onclick={cancel} alternative-text="Settings" title="Settings"></lightning-button-icon>
+      </div>
+      <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+        <canvas height="500" width="700" ></canvas>
+      </div>
+      <footer class="slds-modal__footer slds-modal__footer_directional">
+        <button class="slds-button slds-button_neutral" onclick={undo}>Undo</button>
+        <button class="slds-button slds-button_brand" onclick={save}>Save</button>
+      </footer>
+    </div>
+  </section>
+  <div class="slds-backdrop slds-backdrop_open" onclick={cancel}></div>
+</template>

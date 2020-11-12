@@ -1,0 +1,35 @@
+.media-list {
+  min-width: 400px;
+  min-height: 500px;
+}
+.file-preview {
+  width: 300px;
+  border: solid 1px red;
+  margin: 20px auto;
+  position: relative;
+  cursor: pointer;
+}
+.file-preview img {
+  width: 300px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.media-list ul li {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+.media-list ul {
+  text-align: center;
+}
+ul li img {
+  border-radius: 5px;
+  width: 100px;
+}
+.current {
+  border: solid 2px #1b5297;
+}
+.spinner-container {
+  margin: 70px;
+}

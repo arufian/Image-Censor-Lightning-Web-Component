@@ -1,0 +1,11 @@
+canvas {
+  border:1px solid red;
+  margin: 20px auto;
+  display: block;
+}
+
+.button-close {
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
