@@ -1,4 +1,4 @@
-# Image-Censor-Lightning-Web-Component
+# Image Censor Lightning Web Component
 
 ## Image or photo editor to censor or block sensitive data.
 
